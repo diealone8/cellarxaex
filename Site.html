@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cellarxæx</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'MedievalSharp', cursive;
+      color: black;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text x="0" y="24" font-size="28" fill="black">✝</text></svg>') 16 16, auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10vh;
+    }
+
+    .photo-frame {
+      border: 0px solid #2c1b1b;
+      padding: 0px;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 0px #00000066;
+      max-width: 90vw;
+    }
+
+    .photo-frame img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .buttons button {
+      font-family: Verdana, cursive;
+      font-size: 20px;
+      background-color: transparent;
+      border: 3px solid black;
+      color: black;
+      padding: 10px 20px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0;
+      text-shadow: 0 0 1px black;
+    }
+
+    .buttons button::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: darkred;
+      border-radius: 50%;
+      transform: scale(0);
+      opacity: 0.5;
+      top: 50%;
+      left: 50%;
+      pointer-events: none;
+      transition: transform 0.5s ease-out;
+      z-index: 0;
+      transform-origin: center;
+    }
+
+    .buttons button:active::after {
+      transform: scale(4);
+    }
+
+    .buttons button span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .buttons button:hover {
+  box-shadow: 0 0 10px black;
+    }
+
+    .symbols {
+      margin-top: 40px;
+      font-size: 28px;
+      color: black;
+      text-shadow: 0 0 1px black;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 14px;
+      color: black;
+      font-family: 'Verdana', cursive;
+      text-shadow: 0 0 1px black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo-frame">
+      <img src="centerphoto.jpg" alt="Center Photo">
+    </div>
+
+    <div class="buttons">
+      <button onclick="window.location.href='https://t.me/umbrafatum'"><span>Telegram</span></button>
+      <button onclick="window.location.href='https://www.tiktok.com/@killeveryonenow69'"><span>TikTok</span></button>
+      <button onclick="window.location.href='https://soundcloud.com/diealone8'"><span>SoundCloud</span></button>
+    </div>
+
+    <div class="symbols">𒄿𒄿𒄿𒄿𒄿</div>
+  </div>
+
+  <footer>©Copyright: by XæX</footer>
+</body>
+</html>
